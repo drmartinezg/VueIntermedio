@@ -1,0 +1,3 @@
+# Vue Single File Components Intro
+
+Para seguir **aprendiendo Vue y su Vue CLI**, uno de los conceptos más importantes a dominar son los [Single File Components](https://vuejs.org/v2/guide/single-file-components.html). Los SFC son los ladrillos de una App Vue (creada con CLI) y combinan estructura, lógica y estilo en un único archivo. Aunque los dos últimos (lógica y estilo) no son necesarios si no los necesitas.
