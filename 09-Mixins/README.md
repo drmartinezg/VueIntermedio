@@ -1,0 +1,3 @@
+# Qué son los mixins Vue
+
+Los [mixins Vue](https://vuejs.org/v2/guide/mixins.html) sirven para encapsular funcionalidad que pueda ser re-utilizada en varios componentes ([o todos ellos](https://vuejs.org/v2/guide/mixins.html#Global-Mixin)). De ahí su nombre (_mix in: mezclar, combinar_). Vamos a poner en práctica la teoría y luego veremos algunas consideraciones sobre cómo funciona esa combinación en casos específicos.
