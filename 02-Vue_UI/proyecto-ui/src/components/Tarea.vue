@@ -2,15 +2,23 @@
     <div>
         <h3>
             {{ titulo }} 
-            <button @click="$emit('eliminarItem')">Eliminar</button>
+            <!-- <button @click="$emit('eliminarItem')">Eliminar</button> -->
+            <button @click="mostrarDetalles(titulo)">Detalles</button>
         </h3>
     </div>
 </template>
 
 <script>
+    import EventBus from '../EventBus.js';
     export default {
         name: 'Tarea',
-        props: ['titulo']
+        props: ['titulo'],
+        methods: {
+            // Acción
+            mostrarDetalles(titulo) {
+                EventBus.$emit('detalles', titulo);
+            }
+        }
     }
 </script>
 
