@@ -2,7 +2,7 @@
     <div>
         <h3>
             {{ titulo }} 
-            <button @click="$emit('eliminarTarea')">Eliminar</button>
+            <button @click="$emit('eliminarItem')">Eliminar</button>
         </h3>
     </div>
 </template>
