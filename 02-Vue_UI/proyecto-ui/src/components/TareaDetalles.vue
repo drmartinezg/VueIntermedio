@@ -1,16 +1,18 @@
 <template>
     <div>
         <h1>Los detalles:</h1>
-        <p>{{ detalles }}</p>
+        <p>{{ detalles.tituloTarea }}</p>
     </div>
 </template>
 
 <script>
-import EventBus from "../EventBus.js";
+// import EventBus from "../EventBus.js";
+import state from '../state.js';
 export default {
     name: 'TareaDetalles',
     created() {
-        EventBus.$on('detalles', detalles => this.detalles = detalles); 
+        // EventBus.$on('detalles', detalles => this.detalles = detalles);
+        this.detalles = state.state;
     },
     data() {
         return {

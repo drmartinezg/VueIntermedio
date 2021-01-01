@@ -9,14 +9,16 @@
 </template>
 
 <script>
-    import EventBus from '../EventBus.js';
+    // import EventBus from '../EventBus.js';
+    import state from '../state.js';
     export default {
         name: 'Tarea',
         props: ['titulo'],
         methods: {
             // Acción
             mostrarDetalles(titulo) {
-                EventBus.$emit('detalles', titulo);
+                // EventBus.$emit('detalles', titulo);
+                state.guardarTarea(titulo);
             }
         }
     }
